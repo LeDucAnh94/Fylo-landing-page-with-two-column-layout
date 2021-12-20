@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Fylo landing page with two column layout</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+ 
+</head>
+<body>
+  <header class="site-header">
+    <nav class="header-nav nav"> 
+      <a href=""><img src="/images/logo.svg" alt="logo" class="header-logo" /></a>
+      <a href="#" class="header-nav-menu">Features</a>
+      <a href="#" class="header-nav-menu">Team</a>
+      <a href="#" class="header-nav-menu">Sign In</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="main-content-section section-1">
+      <section class="section-left">
+        <h2 class="main-content-title bold">
+          All your files in one secure location, accessible anywhere.
+        </h2>
+        <p>
+          Fylo stores your most important files in one secure location. 
+          Access them wherever you need, share and collaborate with friends, 
+          family, and co-workers.
+        </p>
+        <form action="" >
+          <input  type="email" id="mail" name="mail" class="main-content-email" placeholder="Enter your email..." />
+          <span class="error" aria-live="polite"></span>
+          <input type="submit" class="main-content-btn bold" value="Get Started" onclick="checkEmail();" />
+        </form>
+      </section>
+      <section class="section-right">
+        <img src="/images/illustration-1.svg" alt="illustration-1" class="main-content-img">
+      </section>
+    </section>
+    <section class="illustration-container"></section>
+    <section class="main-content-section section-2">
+      <section class="section-left">
+        <h2 class="main-content-title bold">
+          Stay productive, wherever you are
+        </h2>
+        <p class="main-content-text">
+          Never let location be an issue when accessing your files. Fylo has you 
+          covered for all of your file storage needs.
+        </p>
+        <p class="main-content-text">
+          Securely share files and folders with friends, family and colleagues for 
+          live collaboration. No email attachments required!
+        </p>
+        <a href="#" class="main-content-link inline nav">
+          See how Fylo works
+          <span class="arrow-icon"><img src="/images/icon-arrow.svg" alt="icon-arrow"></span>
+        </a>
+        <div class="card inline" cite="#">
+          <img src="/images/icon-quotes.svg" alt="quotes" class="card-icon inline">
+          <p class="card-text inline">
+            Fylo has improved our team productivity by an order of magnitude. Since 
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          <div class="card-footer inline">
+            <span>
+              <img src="/images/avatar-testimonial.jpg" alt="testimonial" class="card-footer-avatar inline">
+              <p class="card-footer-attr inline">
+                <span class="bold">
+                  Kyle Burton
+                </span>
+                <br>
+                Founder & CEO, Huddle
+              </p>
+            </span>
+          </div>
+        </div> 
+      </section>
+      <section class="section-right">
+        <img src="/images/illustration-2.svg" alt="illustration-2" class="main-content-img" >
+      </section>
+    </section>
+    <section class="main-content-section section-3">
+      <section class="section-left">
+        <h2 class="main-content-title bold">
+          Get early access today
+        </h2>
+        <p class="main-content-text">
+          It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </section>
+      <section class="section-right">
+        <form action="" >
+          <input type="email" id="mail" name="mail" class="main-content-email" placeholder="Enter your email..." />
+          <span class="error" aria-live="polite"></span>
+          <input type="submit" class="main-content-btn bold" value="Get Started For Free" onclick="checkEmail();" />
+        </form>
+      </section>
+    </section>
+  </main>
+  
+  <footer class="site-footer"> 
+    <a href="#"><img src="/images/logo.svg" alt="logo-footer" class="footer-logo"></a>
+    <section class="footer-main">
+      <ul class="contact-info">
+        <li class="contact-info-item">
+          <img class="contact-icon" src="/images/icon-phone.svg" alt="phone">
+          <a href="tel:+">Phone: +1-543-123-4567</a>
+        </li>
+        <li class="contact-info-item">
+          <img class="contact-icon" src="/images/icon-email.svg" alt="email">
+          <a href="mailto:">example@fylo.com</a>
+        </li>
+      </ul>
+      <nav class="footer-nav nav nav1">
+        <a href="#" class="footer-nav-menu">About Us</a>
+        <a href="#" class="footer-nav-menu">Jobs</a>
+        <a href="#" class="footer-nav-menu">Press</a>
+        <a href="#" class="footer-nav-menu">Blog</a>
+      </nav>
+      <nav class="footer-nav nav nav2">
+        <a href="#" class="footer-nav-menu">Contact Us</a>
+        <a href="#" class="footer-nav-menu">Terms</a>
+        <a href="#" class="footer-nav-menu">Privacy</a>
+      </nav>
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"><a href="#"></a></i>
+        <i class="fab fa-twitter"><a href="#"></a></i>
+        <i class="fab fa-instagram-square"><a href="#"></a></i>
+      </div>
+    </section>
+    <p class="attribution">
+      Challenge by <a class="attribution-link" href="#">Frontend Mentor</a>. 
+      Coded by <a class="attribution-link" href="#">Lê Đức Anh</a>.
+    </p>
+  </footer>
+  <script src="/javascript/main.js"></script>
+</body>
+</html>
